@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em 0;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+}
+
+.box h2 {
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.box button {
+    background: rgb(41, 134, 255);
+    padding: .2em 1em;
+    border: 2px solid rgb(41, 134, 255);
+    cursor: pointer;
+    color: #eeeeee;
+    font-size: 1.3em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.box button:hover {
+    background: #eeeeee;
+    color: rgb(41, 134, 255);
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(138, 188, 253, 0.5);
+
+}
+
+.modal .box {
+    position: relative;
+    background: #eeeeee;
+
+}
+
+.modal .box button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2em;
+    height: 2em;
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: red;
+    font-size: 2em;
+}
+.modal .box button:hover {
+    transform: scale(1.2);
+}
+
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
