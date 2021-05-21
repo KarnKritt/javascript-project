@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloading {
+    display: flex;
+}
+.preloading.out {
+    display: none;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.bx {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    width: 100%;
+    height: 100vh;
+}
+
+.bx h1 {
+    color: #fff;
+    z-index: 1;
+    font-size: 4em;
+}
+.btns {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.btn {
+    position: relative;
+    margin: 2em;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+}
+.btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 999;
+    width: 4em;
+    height: 2em;
+    background: #fff;
+    padding: .4em .6em;
+    text-transform: capitalize;
+    transition: .5s;
+}
+.btn .switch {
+    position: absolute;
+    left: 0;
+    background: rgb(79, 79, 255);
+}
+.btn .switch.slide {
+    position: absolute;
+    left: 50%;
+}
