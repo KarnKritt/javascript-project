@@ -25,7 +25,7 @@ const weekdays = [
 const fixed = document.querySelector(".fixedDate");
 const countdownDate = document.querySelectorAll(".date span h1");
 
-const fixedDate = new Date(2021, 4, 25, 15, 30, 0);
+const fixedDate = new Date(2021, 4, 24, 15, 30, 0);
 let fxYr = fixedDate.getFullYear();
 let fxDay = weekdays[fixedDate.getDay()];
 let fxDate = fixedDate.getDate();
@@ -62,6 +62,16 @@ function remainTime() {
   countdownDate.forEach(function (item, index) {
     item.innerHTML = format(value[index]);
   });
+
+  const timeout = document.querySelector(".timeout");
+
+  if (interval < 0) {
+    clearInterval(remainTime);
+    countdownDate.forEach(function (itm) {
+      itm.innerHTML = `00`;
+    });
+    timeout.innerHTML = `<h2>Sorry! Promotion is now end</h2>`;
+  }
 }
 
-setInterval(remainTime, 1000);
+let t = setInterval(remainTime, 1000);
