@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgb(231, 223, 208);
+}
+body div {
+    width: 40%;
+    height: 60%;
+    margin: .5em;
+}
+body div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.date {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date span {
+margin: 1em;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: #222;
+color: #fff;
+width: 5em;
+}
+.fixedDate {
+    color: rgb(255, 123, 75);
+}
