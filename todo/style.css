@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(231, 223, 208);
+}
+
+.container {
+    width: 35em;
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.modal {
+    background: none;
+    height: 2em;
+    width: 100%;
+    padding: .2em 1em;
+    border-radius: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: .8em;
+    transition: .3s;
+}
+.modal-add {
+    color: green;
+background: rgb(223, 252, 223);}
+.modal-delete {
+color: red;
+background: rgb(255, 195, 195);}
+
+h1 {
+    margin: .5em 0;
+    letter-spacing: 3px;
+    font-family: "Great Vibes",
+        cursive;
+    color: coral;
+}
+
+.form {
+    width: 100%;
+}
+
+.form .inp {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.form .inp input {
+    width: 85%;
+    padding: .4em .8em;
+    background: rgb(241, 241, 241);
+    border-radius: 10px 0 0 10px;
+    border: none;
+}
+
+.form .inp button {
+    width: 15%;
+    padding: .4em .8em;
+    background: rgb(255, 225, 214);
+    border-radius: 0 10px 10px 0;
+    border: none;
+    cursor: pointer;
+}
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+}
+.box-show {
+    visibility: visible;
+}
+
+.list {
+    margin: 1em 0;
+    width: 100%;
+}
+
+.list li {
+    width: 100%;
+    display: flex;
+    padding: .4em .8em;
+    font-size: .8em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.list li:hover {
+    background: rgb(241, 241, 241);
+    transition: .5s;
+}
+
+.list li p {
+    width: 100%;
+}
+.list li button {
+    margin-left: .5em;
+    width: 2em;
+    height: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.list li button.edit {
+    color: rgb(62, 223, 62);
+}
+.list li button.delete {
+    color: red;
+}
+.clear {
+    display: initial;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: red;
+    cursor: pointer;
+}
